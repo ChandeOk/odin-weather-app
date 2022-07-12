@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer module src="./index.js"></script>
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <video playsinline autoplay muted loop class="bg-rain">
+      <source src="./bg/bg-rain.mp4" type="video/mp4" />
+    </video>
+    <form>
+      <label for="search">Search</label>
+      <input type="text" name="search" id="search" placeholder="New York" />
+    </form>
+    <div class="weather">
+      <div class="location">Vladivostok, Russia</div>
+      <div class="temperature">19℃</div>
+      <div class="description">Heavy rain</div>
+    </div>
+    <button class="unit">℃</button>
+  </body>
+</html>
