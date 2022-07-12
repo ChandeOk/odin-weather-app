@@ -31,13 +31,15 @@ form {
 
 #search {
   background: rgba(128, 128, 128, 0.2);
-  border: 1px solid #212529;
+  /* border: 1px solid #212529; */
+  border: 1px solid aliceblue;
   border-radius: 50px;
   height: 3rem;
   width: 20rem;
   font-size: 2rem;
   padding-left: 20px;
-  color: #15171a;
+  /* color: #15171a; */
+  color: aliceblue;
 }
 #search:focus {
   outline: none;
@@ -52,7 +54,8 @@ form {
   transform: translateX(-50%);
   gap: 35px;
   font-size: 3rem;
-  background-color: rgba(186, 200, 255, 0.082);
+  /* background-color: rgba(186, 200, 255, 0.082); */
+  background-color: rgba(240, 248, 255, 0.158);
   height: 10%;
   width: 90%;
   justify-content: center;
@@ -73,4 +76,8 @@ form {
   font-size: 1.2rem;
   border-radius: 10px;
   cursor: pointer;
+}
+
+label {
+  color: aliceblue;
 }

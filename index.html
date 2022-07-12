@@ -11,21 +11,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script defer module src="./index.js"></script>
+    <script defer type="module" src="./index.js"></script>
     <title>WeatherApp</title>
   </head>
   <body>
     <video playsinline autoplay muted loop class="bg-rain">
-      <source src="./bg/bg-rain.mp4" type="video/mp4" />
+      <source src="./bg/bg-default.mp4" type="video/mp4" />
     </video>
     <form>
       <label for="search">Search</label>
       <input type="text" name="search" id="search" placeholder="New York" />
     </form>
     <div class="weather">
-      <div class="location">Vladivostok, Russia</div>
-      <div class="temperature">19℃</div>
-      <div class="description">Heavy rain</div>
+      <div class="location">Check weather in your city</div>
+      <div class="temperature"></div>
+      <div class="description"></div>
     </div>
     <button class="unit">℃</button>
   </body>
