@@ -75,7 +75,9 @@ const getCityWeather = async (data) => {
 
 searchForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-  const cityWeather = await getCityWeather(getWeatherData(searchInput.value));
+  const cityWeather = await getCityWeather(
+    getWeatherData(searchInput.value.toLowerCase())
+  );
   locationEl.textContent = `${cityWeather.name}, ${cityWeather.country}`;
   temperature.textContent = `${cityWeather.temperature}${
     unit === celcium ? '℃' : '℉'
